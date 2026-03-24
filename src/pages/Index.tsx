@@ -127,10 +127,10 @@ export default function Visualizer() {
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="border-b border-border px-4 py-3 flex items-center gap-4">
-        <h1 className="text-lg font-bold font-mono text-primary tracking-tight">
+        <h1 className="text-4xl font-bold font-mono text-primary tracking-tight">
           PathFinder 
         </h1>
-        <span className="text-xs text-muted-foreground hidden sm:inline">
+        <span className="text-lg font-bold text-muted-foreground hidden sm:inline">
           - A Search Algorithm Visualizer to understand how AI path-finds
         </span>
       </header>
@@ -156,7 +156,7 @@ export default function Visualizer() {
                 ))}
               </SelectContent>
             </Select>
-            <p className="text-xs text-muted-foreground mt-1.5">{algoInfo.description}</p>
+            <p className="text-base text-muted-foreground mt-1.5">{algoInfo.description}</p>
             <span className={`inline-block mt-1 text-[10px] font-mono px-1.5 py-0.5 rounded ${algoInfo.type === 'Informed' ? 'bg-accent/20 text-accent' : 'bg-primary/20 text-primary'}`}>
               {algoInfo.type}
             </span>
