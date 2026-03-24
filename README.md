@@ -1,36 +1,50 @@
-# 🚀 Pathify – Pathfinding Visualizer
+# Pathfinder: AI Search Algorithm Visualizer
 
-## 📌 Overview
-Pathify is an interactive web app that visualizes pathfinding and search algorithms on a grid. Users can draw walls, set start/end nodes, and watch step-by-step animations.
+![Pathfinder Demo](Screenshot_Demo.png)
 
----
+## Project Overview
 
-## ✨ Features
-- Interactive 25×40 grid (draw walls, set start/end)
-- 5 Algorithms:
-  - **BFS** – Shortest path (level-order)
-  - **DFS** – Fast, not optimal
-  - **UCS** – Cost-based optimal path
-  - **Greedy** – Heuristic-based, faster
-  - **A\*** – Optimal (g + h)
-- Visualization:
-  - 🔵 Visited nodes  
-  - 🟡 Frontier  
-  - 🟢 Final path  
-- Controls: speed slider, play/pause, skip, clear grid, random maze
-- Real-time stats (steps, visited nodes, path length)
-- Responsive UI (dark/light mode)
+Pathfinder is a web-based application designed to visualize the execution of various AI pathfinding algorithms in real-time. It provides an interactive grid where users can observe how different search strategies explore a space to find the optimal path from a starting point to an end point. This tool is built to offer a clear and intuitive understanding of how these fundamental AI algorithms operate.
 
----
+## Features
 
-##  🛠️ Tech Stack
-React + TypeScript + Vite
-Tailwind CSS + shadcn/ui
+*   **Algorithm Visualization:** Watch algorithms as they explore the grid step-by-step.
+*   **Interactive Grid:** Draw custom walls and obstacles directly on the grid.
+*   **Adjustable Speed:** Control the speed of the visualization to watch at your own pace.
+*   **Maze Generation:** Automatically generate a random maze for the algorithms to solve.
+*   **Real-time Statistics:** View the number of visited nodes and the final path length.
 
----
+### Implemented Algorithms
 
-## 🎮 Usage
-Select algorithm
-Draw grid (walls/start/end)
-Click Visualize
-Watch animation
+*   A* Search
+*   Greedy Best-First Search
+*   Uniform Cost Search (UCS)
+*   Breadth-First Search (BFS)
+*   Depth-First Search (DFS)
+
+## Local Setup
+
+To run this project on your local machine, follow these steps:
+
+1.  **Clone the repository:**
+    ```sh
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+
+2.  **Install dependencies:**
+    ```sh
+    npm install
+    ```
+
+3.  **Run the development server:**
+    ```sh
+    npm run dev
+    ```
+
+The application will be available at `http://localhost:5173`.
+
+## Tech Stack
+
+*   **Frontend:** React, Vite
+*   **Styling:** Tailwind CSS
