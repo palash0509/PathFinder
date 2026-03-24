@@ -128,10 +128,10 @@ export default function Visualizer() {
       {/* Header */}
       <header className="border-b border-border px-4 py-3 flex items-center gap-4">
         <h1 className="text-lg font-bold font-mono text-primary tracking-tight">
-          Search Algorithm Visualizer
+          PathFinder 
         </h1>
         <span className="text-xs text-muted-foreground hidden sm:inline">
-          Explore how AI search algorithms find paths
+          - A Search Algorithm Visualizer to understand how AI path-finds
         </span>
       </header>
 
