@@ -126,12 +126,17 @@ export default function Visualizer() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="border-b border-border px-4 py-3 flex items-center gap-4">
-        <h1 className="text-4xl font-bold font-mono text-primary tracking-tight">
-          PathFinder 
-        </h1>
-        <span className="text-lg font-bold text-muted-foreground hidden sm:inline">
-          - A Search Algorithm Visualizer to understand how AI path-finds
+      <header className="border-b border-border px-4 py-3 flex items-center justify-between w-full">
+        <div className="flex items-center gap-4">
+          <h1 className="text-4xl font-bold font-mono text-primary tracking-tight">
+            PathFinder 
+          </h1>
+          <span className="text-lg font-bold text-muted-foreground hidden sm:inline">
+            - A Search Algorithm Visualizer to understand how AI path-finds
+          </span>
+        </div>
+        <span className="text-sm text-gray-400 font-medium">
+          made by: Jai (RA2411026010131) & Aggam (RA2411026010139)
         </span>
       </header>
 
