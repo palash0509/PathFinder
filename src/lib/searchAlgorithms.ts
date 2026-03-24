@@ -247,11 +247,11 @@ export function aStar(grid: CellType[][], start: Position, end: Position): Searc
 }
 
 export const algorithms = {
-  bfs: { name: 'BFS', fn: bfs, type: 'Uninformed' as const, description: 'Explores level by level. Guarantees shortest path.' },
-  dfs: { name: 'DFS', fn: dfs, type: 'Uninformed' as const, description: 'Explores as deep as possible first. No shortest path guarantee.' },
-  ucs: { name: 'UCS', fn: ucs, type: 'Uninformed' as const, description: 'Expands lowest-cost node. Guarantees optimal path.' },
-  greedy: { name: 'Greedy Best-First', fn: greedy, type: 'Informed' as const, description: 'Uses heuristic only. Fast but not optimal.' },
-  astar: { name: 'A*', fn: aStar, type: 'Informed' as const, description: 'Uses cost + heuristic. Optimal and efficient.' },
+  bfs: { name: 'BFS', fn: bfs, type: 'Uninformed' as const, description: 'Breadth-First Search acts like a ripple in a pond, exploring all neighboring nodes equally before moving further outward. It guarantees the shortest path on a standard, unweighted grid, but because it is completely unguided, it will waste time exploring in the opposite direction of the target.' },
+  dfs: { name: 'DFS', fn: dfs, type: 'Uninformed' as const, description: 'Depth-First Search dives as deeply as possible down a single path until it hits a dead end, then backtracks to try the next route. It is a poor choice for finding the shortest path, but it is highly memory-efficient and excellent for exploring every possible corridor of a complex maze' },
+  ucs: { name: 'UCS', fn: ucs, type: 'Uninformed' as const, description: 'Uniform Cost Search Uniform Cost Search explores paths based on their actual accumulated cost, always expanding the cheapest known path first. It guarantees the absolute shortest route on grids with varying terrain weights, making it incredibly reliable, though it can be slower as it searches evenly in all directions without a specific target in mind.' },
+  greedy: { name: 'Greedy Best-First', fn: greedy, type: 'Informed' as const, description: 'Greedy Best-First Search uses a heuristic to aggressively move toward the target node as quickly as possible. While it is incredibly fast because it ignores the cost of the path taken so far, it can easily get trapped by obstacles and does not guarantee the shortest overall path.' },
+  astar: { name: 'A*', fn: aStar, type: 'Informed' as const, description: 'A* (A-Star) is a smart search algorithm that finds the shortest path by combining the actual cost from the start with an estimated cost (heuristic) to the goal. It is optimal and widely used in game development and maps.' },
 };
 
 export type AlgorithmKey = keyof typeof algorithms;
