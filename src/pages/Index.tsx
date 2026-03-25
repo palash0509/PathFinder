@@ -135,8 +135,8 @@ export default function Visualizer() {
             - A Search Algorithm Visualizer to understand how AI path-finds
           </span>
         </div>
-        <span className="text-sm text-gray-400 font-medium">
-          made by: Jai (RA2411026010131) & Aggam (RA2411026010139)
+        <span className="text-base text-gray-400 font-medium">
+          Made by: Jai (RA-131) & Aggam (RA-139)
         </span>
       </header>
 
