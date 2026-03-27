@@ -136,7 +136,7 @@ export default function Visualizer() {
           </span>
         </div>
         <span className="text-base text-gray-400 font-medium">
-          Made by: Jai (RA-131) & Aggam (RA-139)
+          Made by: Palash (RA-488), Ved (RA-490), Sardhak (RA-506)
         </span>
       </header>
 
